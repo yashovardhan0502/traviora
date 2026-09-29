@@ -38,9 +38,7 @@ def get_current_weather(city: str):
 @mcp.tool()
 def get_forecast(city: str):
 
-    url={
-        "https://api.openweathermap.org/data/2.5/forecast"
-    }
+    url = "https://api.openweathermap.org/data/2.5/forecast"
 
     params={
         "q": city,
