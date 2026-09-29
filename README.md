@@ -273,10 +273,15 @@ pip install -r requirements.txt
 ```
 
 ### 4. Configure Environment Variables
-Copy and update the `.env` file with your credentials:
+Copy the example environment file and update it with your credentials:
 ```bash
-# Create .env and populate keys as shown in the section above
+# Windows (PowerShell):
+Copy-Item .env.example .env
+
+# Linux / macOS:
+cp .env.example .env
 ```
+
 
 ### 5. Launch the Application
 Start the FastAPI application with Uvicorn:
